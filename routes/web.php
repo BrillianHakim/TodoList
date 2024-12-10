@@ -9,3 +9,6 @@ Route::get('/', function () {
 });
 
 Route::get('/todolist', [TugasController::class, 'index'])->name('tugas.index');
+Route::get('/data',[TugasController::class, 'data'])->name('tugas.data');
+Route::post('/todolist', [TugasController::class, 'store'])->name('tugas.store');
+

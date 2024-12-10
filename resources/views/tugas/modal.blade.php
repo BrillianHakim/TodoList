@@ -9,15 +9,15 @@
         <div class="modal-body">
             <div class="mb-3">
                 <label for="judul" class="form-label">Judul</label>
-                <input type="text" class="form-control" id="juduk" >
+                <input type="text" class="form-control" id="judul" >
               </div>
               <div class="mb-3">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
-                <textarea class="form-control" id="juduk" rows="3"></textarea>
+                <textarea class="form-control" id="deskripsi" rows="3"></textarea>
               </div>
               <div class="text-end">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Tambah</button>
+                <button type="button" class="btn btn-primary" id="tambah" onclick="tambah()">Tambah</button>
               </div>
         </div>
         

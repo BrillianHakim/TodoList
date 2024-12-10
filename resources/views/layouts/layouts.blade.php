@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="_token" content="{{ csrf_token() }}">
     <title>{{ $title ?? "Todo List" }}</title>
     <link rel="styesheet" href="{{ asset('css/bootstrap.min.css')}}">
     {{-- Awesome link --}}
@@ -27,6 +28,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min"></script>
     <!-- Bootstrap 5 JavaScript Bundle dengan Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @stack('js')
 </body>
 </html>
